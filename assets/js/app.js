@@ -32,6 +32,8 @@ let inventario = {
     }
 }
 
+
+
 const inpPasajeros = document.getElementById('inpPasajeros')
 const seleccionCiudades = document.getElementById('seleccionCiudades')
 const showPrice = document.getElementById('showPrice')
@@ -39,6 +41,21 @@ const btnLiquidar = document.getElementById('btnLiquidar')
 const seleccionSillas = document.getElementById('seleccionSillas')
 //let sillaSeleccionada;
 const inpEquipaje = document.getElementById('inpEquipaje')
+const footer = document.getElementById('footer')
+
+placeFooter()
+
+function placeFooter(){
+    let hasVScroll = document.body.offsetHeight> window.innerHeight;
+
+if (hasVScroll) {
+    footer.classList.remove("absoluto")
+}else{
+    footer.classList.toggle("absoluto")
+}
+}
+
+window.addEventListener('resize', placeFooter)
 
 inpPasajeros.value = 1
 

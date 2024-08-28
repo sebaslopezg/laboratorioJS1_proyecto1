@@ -1,7 +1,7 @@
 body{
     background-color: #eeeeee;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header{
@@ -46,7 +46,6 @@ header .img_header{
 footer{
     background-color: #a0a0a0;
     width: 100%;
-    position: absolute;
     bottom: 0;
 }
 /*
@@ -66,4 +65,8 @@ footer{
 .section .precioTotal{
     font-size: 24px;
     font-weight: bold;
+}
+
+.absoluto{
+    position: absolute;
 }
